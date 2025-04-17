@@ -409,10 +409,15 @@ header.fixed.nav-donw {
 }
 
 .result-inner {
-  width: calc(100% + 32vw);
-  margin: 145px 0 0 154px;
+  width: calc(100% + 10vw);
+  margin: 145px 0 0 0;
   position: unset;
-  padding-bottom: 154px
+  padding-bottom: 154px;
+  padding-left: 10%;
+}
+
+.result-inner .slick-list {
+  padding: 0px 10vw 0 0 !important;
 }
 
 .result-inner .result-slide {
@@ -627,7 +632,8 @@ header.fixed.nav-donw {
   flex-wrap: wrap;
   max-width: 1632px;
   margin: 0 auto;
-  align-items: stretch
+  align-items: stretch;
+  justify-content: space-between;
 }
 
 .solutions-inner:first-child {
@@ -636,22 +642,21 @@ header.fixed.nav-donw {
 
 .solutions-inner .heading-col {
   width: 40%;
-  padding: 0 20px 95px 90px;
+  padding: 0 20px 55px 38px;
   display: flex;
   align-items: flex-end;
   height: 100%;
-  aspect-ratio: 1/0.73;
   position: relative
 }
 
 .solutions-inner .heading-col .object {
   content: "";
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
   width: 70%;
   position: absolute;
   left: 90px;
-  top: 50%;
-  border: 80px solid #70707014;
+  top: 40%;
+  border: 60px solid #70707014;
   border-radius: 50%;
   background: 0 0;
   opacity: 0;
@@ -669,8 +674,8 @@ header.fixed.nav-donw {
 }
 
 .category-col {
-  width: 60%;
-  border-radius: 16px 16px 16px 8px;
+  width: 57%;
+  border-radius: 16px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -683,7 +688,7 @@ header.fixed.nav-donw {
   flex-direction: column;
   gap: 25px;
   border-radius: 16px;
-  aspect-ratio: 1/1
+  /* aspect-ratio: 1 / .8; */
 }
 
 .category-col .category-item img {
@@ -716,8 +721,7 @@ header.fixed.nav-donw {
 
 .solutions-inner .image-col {
   border-radius: 16px;
-  width: 58%;
-  margin-top: -500px;
+  width: 50%;
   position: relative;
   z-index: 0;
   aspect-ratio: 1/1;
@@ -744,7 +748,7 @@ header.fixed.nav-donw {
 }
 
 .detail-col {
-  width: 40%;
+  width: 43%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -791,8 +795,8 @@ header.fixed.nav-donw {
 }
 
 .cta-content h2 {
-  font-size: 72px;
-  margin-bottom: 56px;
+  font-size: 60px;
+  margin-bottom: 36px;
   font-weight: 700;
   color: #323232;
   max-width: 600px
@@ -804,7 +808,7 @@ header.fixed.nav-donw {
 }
 
 .cta-content p {
-  font-size: 25px;
+  font-size: 20px;
   color: #404040;
   max-width: 670px
 }
@@ -844,9 +848,9 @@ header.fixed.nav-donw {
 }
 
 .avatars {
-  width: 90px;
+  width: 73px;
   height: auto;
-  margin-right: -46px
+  margin-right: -26px;
 }
 
 .avatars:last-child {
@@ -871,7 +875,8 @@ header.fixed.nav-donw {
 .industries-card,
 .top-details {
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
+  gap: 15px;
 }
 
 .cta-image-wrapper img {
@@ -889,7 +894,7 @@ header.fixed.nav-donw {
   font-size: 0;
   padding: 0;
   border-radius: 16px;
-  width: 160px;
+  width: 110px;
   overflow: hidden;
   bottom: 60px;
   left: 0
@@ -998,11 +1003,12 @@ header.fixed.nav-donw {
 
 .ind-card h3 {
   font-size: 35px;
-  line-height: 1;
+  line-height: 1.2;
   margin-block: 20px;
   font-weight: 500;
   height: 92px;
-  color: var(--offblack)
+  color: var(--offblack);
+  max-width: 190px;
 }
 
 .about-section h2,
@@ -1023,11 +1029,13 @@ header.fixed.nav-donw {
 }
 
 .ind-card p {
-  font-size: 15px
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
 }
 
 .ind-card {
-  max-width: 184px
+  max-width: 324px;
 }
 
 .about-section h2 span {
@@ -1156,6 +1164,233 @@ footer .logo {
   width: 100px
 }
 
+/* ind-result-section starts */
+.ind-result-section {
+  background-color: var(--grey);
+  padding-block: 200px;
+}
+
+.ind-span {
+  color: var(--offgray);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: "Noto Sans";
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  margin-bottom: 40px;
+}
+
+.ind-span span {
+  width: 20px;
+  height: 1px;
+  background-color: var(--offgray);
+  display: block;
+}
+
+.ind-result-section h2 {
+  font-size: 43px;
+  color: var(--primary);
+  font-family: "Noto Sans";
+  font-weight: bold;
+  line-height: 35px;
+  margin-bottom: 12px;
+}
+
+#rd-span {
+  font-family: "Noto Sans";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  color: var(--offblack);
+}
+
+.top-ind-details {
+  margin-bottom: 40px;
+}
+
+.conclusion-span {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.ind-para {
+  font-size: 24px;
+  font-family: "Noto Sans";
+  font-weight: 500;
+}
+
+.ind-img {
+
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.ind-result-section h3 {
+  font-size: 26px;
+  font-family: "Noto Sans";
+  font-weight: bold;
+  line-height: 30px;
+  margin-bottom: 65px;
+}
+
+.ind-detail span {
+  font-size: 21px;
+  font-family: "Noto Sans";
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 68px;
+  display: block;
+}
+
+.ind-result-section .sub-detail {
+  display: flex;
+  gap: 60px;
+}
+
+.ind-result-section .sub-right {
+  max-width: 100%;
+}
+
+.ind-result-section .sub-right p {
+  font-size: 20px;
+  color: #3A3A3A;
+  line-height: 30px;
+}
+
+.ind-result-section .sub-details-row {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.ind-result-section .ind-detail {
+  margin-bottom: 65px;
+}
+
+#lrg-detail {
+  max-width: 675px;
+}
+
+.downtime-details {
+  padding-block: 60px;
+  border-bottom: 1px solid #000;
+}
+
+.ind-details-row {
+  display: flex;
+  gap: 60px;
+}
+
+.ind-heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-family: "Noto Sans";
+  line-height: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+
+}
+
+.ind-result-section .sub-left img {
+  margin-top: 10px;
+}
+
+.ind-result-section .sm-ind .sub-right {
+  max-width: 59%;
+}
+
+.ind-result-section .sm-ind .sub-detail:nth-child(2) .sub-right {
+  max-width: 100%;
+}
+
+.ind-result-section .sm-ind {
+  width: 137%;
+}
+
+.ind-result-section .sm-details .sub-details-row {
+  flex-direction: row;
+}
+
+/* .ind-result-section .sm-details .sub-detail:nth-child(1) .sub-right {
+    max-width: 60%;
+}
+.ind-result-section .sm-details .sub-detail:nth-child(2) .sub-right {
+    max-width: 100%;
+}
+.ind-result-section .sm-details .sub-detail:nth-child(3) .sub-right {
+    max-width: 62%;
+} */
+.ind-result-section .sm-details .sub-detail {
+  max-width: 30%;
+}
+
+.ind-result-section .ind-bottom-detail p {
+  margin-bottom: 40px;
+}
+
+.ind-result-section .ind-bottom-detail h3 {
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+.ind-result-section .ind-bottom-detail {
+  padding-top: 50px;
+}
+
+.accordian-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  align-items: center;
+}
+
+.ind-accordian {
+  margin-bottom: 20px;
+}
+
+.ind-result-section .ind-accordian h3 {
+  margin-bottom: 0;
+}
+
+.ind-result-section .ind-accordian .accordian-header {
+  padding-block: 25px;
+  padding-inline: 25px;
+  border-radius: 8px;
+}
+
+.accordian-content {
+  background-color: #fff;
+  padding: 66px 78px 93px 64px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.accordian-content p {
+  font-family: "Noto Sans";
+  font-size: 18px;
+  line-height: 30px;
+  font-style: italic;
+  margin-bottom: 30px;
+  color: #3A3A3A;
+  font-weight: 500;
+}
+
+.accordian-content p span {
+  display: block;
+}
+
+.accordian-header span img {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.accordian-header img.rotated {
+  transform: rotate(0deg);
+
+}
+
 @media (max-width:1600px) {
 
   .cs-cards::before,
@@ -1271,12 +1506,28 @@ footer .logo {
     width: 100px
   }
 
-  .solutions-inner .image-col {
-    margin-top: -339px
-  }
 
   .hero-section h1 {
     font-size: 65px
+  }
+
+  .ind-card h3 {
+    font-size: 26px;
+    margin-block: 20px;
+    height: 65px;
+  }
+
+  .ind-card p {
+    font-size: 16px;
+  }
+
+  .industries-card,
+  .top-details {
+    gap: 15px;
+  }
+
+  .ind-wrapper {
+    max-width: 54px;
   }
 
   .result-section {
@@ -1321,6 +1572,14 @@ footer .logo {
     padding: 20px
   }
 
+  .result-inner {
+    padding-left: 0%;
+  }
+
+  .result-inner .slick-list {
+    padding: 0 0 !important;
+  }
+
   .case-studies-section,
   .cta-section,
   .industries-section {
@@ -1361,6 +1620,10 @@ footer .logo {
   .bottom-details {
     max-width: 100%;
     margin-left: 0
+  }
+
+  .detail-col {
+    width: 32%;
   }
 }
 
@@ -1559,9 +1822,10 @@ footer .logo {
 
   .ind-card h3 {
     width: 100%;
-    font-size: 28px;
-    margin-block: 5px;
-    height: 33px
+    font-size: 24px;
+    margin-block: 14px;
+    height: auto;
+    max-width: 100%;
   }
 
   .ind-wrapper {
@@ -1772,7 +2036,8 @@ footer .logo {
   .solutions-inner .heading-col {
     padding: 0 16px 85px 9px;
     width: 100%;
-    aspect-ratio: auto
+    aspect-ratio: auto;
+    max-width: 290px;
   }
 
   .detail-col {
