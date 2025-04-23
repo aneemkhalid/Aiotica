@@ -127,7 +127,7 @@ a {
 }
 
 .eyebrow-text {
-  font-size: 28px;
+  font-size: 24px;
   line-height: 45px;
   color: var(--dark);
   font-weight: 700;
@@ -1030,7 +1030,7 @@ header.fixed.nav-donw {
 
 .ind-card p {
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 1.4;
   font-weight: 400;
 }
 
@@ -1041,7 +1041,7 @@ header.fixed.nav-donw {
 .about-section h2 span {
   color: #85b1f3;
   font-size: 30px;
-  margin-right: 2px
+  margin-right: 8px;
 }
 
 .about-section h2 {
@@ -1243,13 +1243,16 @@ footer .logo {
   font-family: "Noto Sans";
   font-weight: 600;
   line-height: 1.2;
-  margin-bottom: 68px;
+  margin-bottom: 55px;
   display: block;
 }
 
 .ind-result-section .sub-detail {
   display: flex;
-  gap: 60px;
+  gap: 30px;
+}
+.ind-details-row.no-space .ind-detail{
+  margin-bottom: 0;
 }
 
 .ind-result-section .sub-right {
@@ -1265,7 +1268,7 @@ footer .logo {
 .ind-result-section .sub-details-row {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 45px;
 }
 
 .ind-result-section .ind-detail {
@@ -1273,12 +1276,8 @@ footer .logo {
   width: 48%;
 }
 
-#lrg-detail {
-  max-width: 675px;
-}
-
 .downtime-details {
-  padding-block: 60px;
+  padding: 60px 0;
   border-bottom: 1px solid #000;
 }
 
@@ -1315,6 +1314,7 @@ footer .logo {
 } */
  .ind-result-section .sm-details .ind-detail {
   width: 100%;
+  margin-bottom: 0;
  }
 
 .ind-result-section .sm-details .sub-details-row {
@@ -1405,12 +1405,12 @@ footer .logo {
 .ind-result-section .industrial-two .sub-right {
   max-width: 100%;
 } 
-.ind-result-section .sub-right p {
-  margin-bottom: 20px;
-  min-height: 120px;
-}
 .ind-result-section .sub-right ul li {
   list-style: disc;
+}
+
+.ind-result-section .sub-right ul li:last-child p {
+  margin: 0;
 }
 
 .ind-result-section .accordian-content ul {
@@ -1422,9 +1422,6 @@ footer .logo {
 }
 .ind-result-section .sub-right ul li p {
   margin-bottom: 25px;
-}
-.ind-result-section .industrial-two .sub-right p {
-  min-height: 73px;
 }
 .spacer {
   height: 40px;
@@ -1469,6 +1466,98 @@ footer .logo {
 .num-span {
   max-width: 545px;
 }
+/* contact page starts */
+.contact-section {
+  padding-block: 200px;
+  background-color: var(--grey);
+}
+.contact-section h2 {
+  font-size: 40px;
+  line-height: 60px;
+  font-family: "Noto Sans";
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.contact-section .contact-left {
+  max-width: 490px;
+}
+.contact-section .contact-left p {
+  font-size: 20px;
+  font-family: "Noto Sans";
+  color: #3A3A3A;
+  max-width: 395px;
+  margin-bottom: 55px;
+}
+.contact-section .contact-left span {
+  font-family: "Noto Sans";
+  font-weight: 600;
+  font-size: 16px;
+  color: #535353;
+  margin-bottom: 30px;
+  display: block;
+}
+.contact-section .contact-right form {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 45px;
+  column-gap: 29px;
+}
+.contact-section .container {
+   display: flex;
+   justify-content: space-between;
+}
+.contact-section .form-detail {
+  display: flex;
+  flex-direction: column;
+  max-width: 48%;
+  width: 100%;
+}
+.contact-section input {
+  min-height: 79px;
+  padding-inline: 20px;
+  border: 1px solid #A7A7A7;
+  border-radius: 8px;
+}
+.contact-right {
+  width: 50%;
+}
+.contact-right label {
+  font-size: 18px;
+  font-family: "Noto Sans";
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+.contact-section .lrg-detail {
+ max-width: 100%;
+} 
+.contact-section textarea {
+  min-height: 79px;
+  padding: 20px;
+  border: 1px solid #A7A7A7;
+  border-radius: 8px;
+  resize: none;
+}
+.form-btn {
+  width: 229px !important;
+  min-height: 60px !important;
+  background-color: #13A590;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.ind-details-row .ind-detail:last-child {
+  margin-bottom: 0;
+}
+.ind-card h3 {
+  font-size: 24px;
+  height: 74px;
+ }
+ .ind-card p {
+   font-size: 16px;
+ }
+ .ind-result-section .sub-right ul {
+  margin-left: 19px;
+ }
 @media (max-width:1600px) {
 
   .cs-cards::before,
@@ -1549,6 +1638,51 @@ footer .logo {
   .ind-img img {
     width: 100%;
   }
+  .ind-result-section {
+    padding-top: 130px;
+  }
+  .contact-section .form-detail {
+    max-width: 46%;
+  }
+  .contact-section .lrg-detail {
+    max-width: 96%;
+}
+.contact-section input {
+  min-height: 60px;
+}
+.contact-section .contact-right form { 
+  row-gap: 30px;
+  column-gap: 23px;
+}
+.contact-right label { 
+  margin-bottom: 15px;
+}
+.contact-section  {
+  padding-bottom: 100px;
+  padding-top: 150px;
+}
+
+.category-col .category-item {
+  padding: 11%;
+}
+.solutions-inner .heading-col h2 {
+  font-size: clamp(2vw, 2.4vw, 50px);
+}
+.solutions-inner {
+  max-width: 1320px;
+}
+.ind-bottom-detail p {
+  font-size: 18px;
+}
+.ind-result-section .sub-right p {
+  font-size: 18px;
+}
+.ind-para { 
+  font-size: 22px;
+}
+.contact-section textarea {
+  min-height: 60px;
+}
 }
 
 @media (max-width:1280px) {
@@ -1673,6 +1807,9 @@ footer .logo {
   .ind-result-section h3 {
     margin-bottom: 60px;
   }
+  .contact-section .container {
+    gap: 20px;
+  }
 }
 
 @media (max-width:1024px) {
@@ -1727,6 +1864,22 @@ footer .logo {
   .ind-detail span {
     margin-bottom: 25px;
   }
+  .contact-section .container {
+    gap: 54px;
+    flex-direction: column;
+}
+.contact-section .contact-left {
+  max-width: 100%;
+}
+.contact-section .contact-left p {
+  max-width: 100%;
+}
+.contact-right {
+  width: 100%;
+}
+.contact-section .form-detail {
+  max-width: 48.8%;
+}
 }
 
 @media (max-width:991px) {
@@ -1998,6 +2151,17 @@ footer .logo {
     max-width: 100%;
 }
 
+  .ind-details-row.no-space .ind-detail{
+    margin-bottom: 60px;
+  }
+
+  .ind-details-row.no-space .ind-detail:last-child{
+    margin-bottom: 0;
+  }
+  .contact-section .form-detail {
+    max-width: 48.4%;
+}
+
 }
 
 @media (max-width:767px) {
@@ -2037,7 +2201,7 @@ footer .logo {
     align-items: center;
     justify-content: center;
     border-radius: 20%;
-    transition: .1s ease-in-out
+    transition: .1s ease-in-out;
   }
 
   header.active::before {
@@ -2298,7 +2462,24 @@ footer .logo {
   .ind-result-section .ind-bottom-detail h3 {
     font-size: 20px;
   }
-
+ .contact-section .customer-info {
+    gap: 0;
+    justify-content: unset;
+}
+.contact-section h2 {
+  font-size: 30px;
+  line-height: 38px;
+}
+.contact-section .contact-left p {
+  font-size: 18px;
+  margin-bottom: 26px;
+}
+.contact-section input {
+  min-height: 50px !important;
+}
+.contact-section .form-detail {
+  max-width: 100%;
+}
 }
 
 @media (max-width:480px) {
@@ -2508,5 +2689,11 @@ footer .logo {
 }
 .accordian-content p {
 font-size: 14px;
+}
+.contact-section .form-detail {
+  max-width: 100%;
+}
+.contact-section h2 {
+  font-size: 26px;
 }
 }
