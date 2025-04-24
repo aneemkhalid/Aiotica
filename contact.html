@@ -1,168 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="stylesheet" href="css/font-awesome.css" >
-    <link rel="stylesheet" href="css/slick.css" >
-    <link rel="stylesheet" href="css/styles.css" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
     <title>Aiotica</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- header-start -->
     <header>
         <div class="container">
-          <a href="./index.html" class="logo">
-            <img src="./assets/icons/logo-icon.svg" alt="logo-icon">Aiotica</a>
-          <div class="hamburger" id="hamburger-11">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          </div>
-          <nav>
-            <ul>
-              <li><a href="index.html#services">Services</a></li>
-              <li><a href="index.html#industries">Industries</a></li>
-              <li><a href="index.html#case-studies">Case Studies</a></li>
-              <li><a href="index.html#about-us">About Us</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
+            <a href="./index.html" class="logo">
+                <img src="./assets/icons/logo-icon.svg" alt="logo-icon">Aiotica</a>
+            <div class="hamburger" id="hamburger-11">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#industries">Industries</a></li>
+                    <li><a href="index.html#case-studies">Case Studies</a></li>
+                    <li><a href="index.html#about-us">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-      </header>
+    </header>
     <!-- header-end-->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Reduce Downtime, Boost Efficiency, and Drive Sustainable Growth with <b>Our IIoT Solutions.</b></h2>
+                <p>Tailored, cost-effective IoT solutions for mid-sized enterprises in the GTA. See how our approach
+                    delivers measurable ROI.</p>
+                <span>Recognised as a Leader by</span>
+                <div class="customer-info">
+                    <img src="./assets/images/contact-1.jpg" alt="Member Avatars" class="avatars">
+                    <img src="./assets/images/contact-2.jpg" alt="Member Avatars" class="avatars">
+                    <img src="./assets/images/contact-3.jpg" alt="Member Avatars" class="avatars">
+                    <img src="./assets/images/contact-4.png" alt="Member Avatars" class="avatars">
 
-  <section class="contact-section">
-    <div class="container">
-    <div class="contact-left">
-        <h2>Reduce Downtime, Boost Efficiency, and Drive Sustainable Growth with <b>Our IIoT Solutions.</b></h2>
-        <p>Tailored, cost-effective IoT solutions for mid-sized enterprises in the GTA. See how our approach delivers measurable ROI.</p>
-        <span>Recognised as a Leader by</span>
-        <div class="customer-info">
-            <img src="./assets/images/contact-1.jpg" alt="Member Avatars" class="avatars">
-            <img src="./assets/images/contact-2.jpg" alt="Member Avatars" class="avatars">
-            <img src="./assets/images/contact-3.jpg" alt="Member Avatars" class="avatars">
-            <img src="./assets/images/contact-4.png" alt="Member Avatars" class="avatars">
-            
-          </div>
-    </div>
-    <div class="contact-right">
-        <form>
-            <div class="form-detail">
-                <label>First Name</label>
-                <input type="text">
+                </div>
             </div>
-            <div class="form-detail">
-                <label>Last Name</label>
-                <input type="text">
+            <div class="contact-right">
+                <form action="email.php" method="POST">
+                    <div class="form-detail">
+                        <label>First Name</label>
+                        <input type="text" name="First_Name">
+                    </div>
+                    <div class="form-detail">
+                        <label>Last Name</label>
+                        <input type="text" name="Last_Name">
+                    </div>
+                    <div class="form-detail">
+                        <label>Work Email</label>
+                        <input type="email" name="Work_Email">
+                    </div>
+                    <div class="form-detail">
+                        <label>Phone Number</label>
+                        <input type="number" name="Phone_Number">
+                    </div>
+                    <div class="form-detail">
+                        <label>Company Name</label>
+                        <input type="text" name="Company_Name">
+                    </div>
+                    <div class="form-detail">
+                        <label>Company Website</label>
+                        <input type="text" name="Company_Website">
+                    </div>
+                    <div class="form-detail lrg-detail">
+                        <label>Product</label>
+                        <input type="text" name="Product">
+                    </div>
+                    <div class="form-detail lrg-detail">
+                        <label>How may We help you?</label>
+                        <textarea name="message"></textarea>
+                    </div>
+                    <input type="submit" value="Submit" class="form-btn">
+                </form>
             </div>
-            <div class="form-detail">
-                <label>Work Email</label>
-                <input type="email">
-            </div>
-            <div class="form-detail">
-                <label>Phone Number</label>
-                <input type="number">
-            </div>
-            <div class="form-detail">
-                <label>Company Name</label>
-                <input type="text">
-            </div>
-            <div class="form-detail">
-                <label>Company Website</label>
-                <input type="text">
-            </div>
-            <div class="form-detail lrg-detail">
-                <label>Product</label>
-                <input type="text">
-            </div>
-            <div class="form-detail lrg-detail">
-                <label>How may We help you?</label>
-                <textarea></textarea>
-            </div>
-           <input type="submit" value="Submit" class="form-btn">
-        </form>
-    </div>
-    </div>
-  </section>
+        </div>
+    </section>
     <!-- about-section start -->
     <section class="about-section" id="about-us">
-      <div class="container">
-        <div class="top-details">
-          <h2><span>About</span>AIOTICA</h2>
-          <div class="details-row">
-            <div class="detail">
-              <p>
-                <b>Mission:</b> We provide tailored, cost-effective IoT
-                solutions for enterprises in the Greater Toronto Area, helping
-                them predict disruptions, prevent inefficiencies, and prosper
-                through enhanced efficiency, productivity, and sustainable
-                growth.
-              </p>
+        <div class="container">
+            <div class="top-details">
+                <h2><span>About</span>AIOTICA</h2>
+                <div class="details-row">
+                    <div class="detail">
+                        <p>
+                            <b>Mission:</b> We provide tailored, cost-effective IoT
+                            solutions for enterprises in the Greater Toronto Area, helping
+                            them predict disruptions, prevent inefficiencies, and prosper
+                            through enhanced efficiency, productivity, and sustainable
+                            growth.
+                        </p>
+                    </div>
+                    <div class="detail">
+                        <p>
+                            <b>Vision:</b>To be the GTA's leading IoT partner, empowering
+                            businesses with real-time insights and data-driven
+                            decision-making, fostering a new era of industrial innovation
+                            and success.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="detail">
-              <p>
-                <b>Vision:</b>To be the GTA's leading IoT partner, empowering
-                businesses with real-time insights and data-driven
-                decision-making, fostering a new era of industrial innovation
-                and success.
-              </p>
+            <div class="bottom-details">
+                <div class="precaution">
+                    <h3>Predict</h3>
+                    <p>Use real-time data to spot issues before they occur.</p>
+                    <span>(Slash downtime costs & surprises)</span>
+                </div>
+                <div class="precaution">
+                    <h3>Prevent</h3>
+                    <p>Minimize downtime with proactive interventions.</p>
+                    <span>(Reduce production hits & maintenance bills)</span>
+                </div>
+                <div class="precaution">
+                    <h3>Prosper</h3>
+                    <p>Drive sustainable growth through efficient operations.</p>
+                    <span>(Improve throughput, fuel expansion)</span>
+                </div>
+                <div class="precaution">
+                    <h3>Local Expertise</h3>
+                    <p>Serving the GTA with agile, customized IIoT solutions.</p>
+                    <span>(On-site support & quick response)</span>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="bottom-details">
-          <div class="precaution">
-            <h3>Predict</h3>
-            <p>Use real-time data to spot issues before they occur.</p>
-            <span>(Slash downtime costs & surprises)</span>
-          </div>
-          <div class="precaution">
-            <h3>Prevent</h3>
-            <p>Minimize downtime with proactive interventions.</p>
-            <span>(Reduce production hits & maintenance bills)</span>
-          </div>
-          <div class="precaution">
-            <h3>Prosper</h3>
-            <p>Drive sustainable growth through efficient operations.</p>
-            <span>(Improve throughput, fuel expansion)</span>
-          </div>
-          <div class="precaution">
-            <h3>Local Expertise</h3>
-            <p>Serving the GTA with agile, customized IIoT solutions.</p>
-            <span>(On-site support & quick response)</span>
-          </div>
-        </div>
-      </div>
     </section>
     <!-- about-section end -->
     <!-- footer start  -->
     <footer>
-      <div class="footer-nav">
-        <div class="container">
-          <a href="#" class="logo"><img src="./assets/icons/logo-icon.svg" alt="logo-icon">Aiotica</a>
-          <ul class="footer-links">
-         <li><a href="index.html#services">Services</a></li>
-            <li><a href="index.html#industries">Industries</a></li>
-            <li><a href="index.html#case-studies">Case Studies</a></li>
-            <li><a href="index.html#about-us">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+        <div class="footer-nav">
+            <div class="container">
+                <a href="#" class="logo"><img src="./assets/icons/logo-icon.svg" alt="logo-icon">Aiotica</a>
+                <ul class="footer-links">
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#industries">Industries</a></li>
+                    <li><a href="index.html#case-studies">Case Studies</a></li>
+                    <li><a href="index.html#about-us">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="footer-main">
-        <div class="container">
-          <span class="num-span"
-            >5800 Ambler Dr. Suite 120, Mississauga, ON L4W 4J4 Canada
-Phone: <a href="tel: 416-439-3300 "> 416-439-3300</a>  | Fax:  <a href ="fax:416-439-3307"> 416-439-3307</a> | Email:
-            <a href="mailto:info@aiotica.com">info@aiotica.com</a></span>
+        <div class="footer-main">
+            <div class="container">
+                <span class="num-span">5800 Ambler Dr. Suite 120, Mississauga, ON L4W 4J4 Canada
+                    Phone: <a href="tel: 416-439-3300 "> 416-439-3300</a> | Fax: <a href="fax:416-439-3307">
+                        416-439-3307</a> | Email:
+                    <a href="mailto:info@aiotica.com">info@aiotica.com</a></span>
 
-          <span class="main-span"
-            >© 2025 <a href="#">Aiotica.</a> All rights reserved.</span
-          >
+                <span class="main-span">© 2025 <a href="#">Aiotica.</a> All rights reserved.</span>
+            </div>
         </div>
-      </div>
     </footer>
     <!-- footer end  -->
     <!-- js start-->
@@ -171,5 +170,6 @@ Phone: <a href="tel: 416-439-3300 "> 416-439-3300</a>  | Fax:  <a href ="fax:416
     <script src="js/custom.js"></script>
     <script></script>
     <!-- js end-->
-  </body>
+</body>
+
 </html>
